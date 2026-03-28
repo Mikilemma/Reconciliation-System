@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "./base.css";
+
+.test-background {
+  background-color: orange !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+}
+
+.btn-primary:hover {
+  background-color: rgb(var(--color-warning)) !important;
+  color: rgb(var(--color-warning-foreground)) !important;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tsehay Bank Theme - Ensure consistent application */
+.tsehay-bank-theme .btn-primary {
+  background-color: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+}
+
+.tsehay-bank-theme .btn-primary:hover {
+  background-color: rgb(var(--color-warning)) !important;
+  color: rgb(var(--color-warning-foreground)) !important;
+  border-color: rgb(var(--color-warning)) !important;
+}
+
+select {
+  color: rgb(var(--color-primary));
+  transition: background-color 150ms, color 150ms, border-color 150ms;
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+  color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-background));
+}
+
+option:checked {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-warning));
+}
+
+option:hover,
+option:focus {
+  background-color: rgb(var(--color-warning));
+  color: rgb(var(--color-warning-foreground));
+}
+
+.tsehay-bank-theme .status-success {
+  background-color: rgb(var(--color-success) / 0.12) !important;
+  color: rgb(var(--color-success)) !important;
+}
+
+.tsehay-bank-theme .status-warning {
+  background-color: rgb(var(--color-warning) / 0.14) !important;
+  color: rgb(var(--color-warning)) !important;
+}
+
+.tsehay-bank-theme .upload-zone:hover {
+  border-color: rgb(var(--color-primary)) !important;
+  background-color: rgb(var(--color-primary) / 0.06) !important;
+}
+
+.tsehay-bank-theme .upload-zone.is-dragging {
+  border-color: rgb(var(--color-primary)) !important;
+  background-color: rgb(var(--color-primary) / 0.12) !important;
+}
+
+.tsehay-bank-theme .upload-zone.has-file {
+  border-color: rgb(var(--color-primary)) !important;
+  background-color: rgb(var(--color-primary) / 0.06) !important;
+}
+
+.tsehay-bank-theme .focus-ring {
+  box-shadow: 0 0 0 2px rgb(var(--color-primary)) !important;
+}
+
+/* Tsehay chrome: ensure sidebar/header stay branded */
+.tsehay-bank-theme .app-sidebar,
+.tsehay-bank-theme .app-sidebar-header,
+.tsehay-bank-theme .app-sidebar-footer {
+  background-color: rgb(var(--color-primary)) !important;
+  color: rgb(var(--color-primary-foreground)) !important;
+}
+
+/* Standardized surfaces */
+.banking-card,
+.banking-card-elevated {
+  border: 1px solid rgb(var(--color-border));
+}
+
+.banking-card {
+  box-shadow: var(--shadow-card);
+}
+
+.banking-card-elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+/* Table striping */
+.table-striped tbody tr:nth-child(even) {
+  background-color: rgb(var(--color-muted) / 0.45);
+}

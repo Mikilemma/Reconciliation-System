@@ -1,0 +1,28 @@
+# Node
+node_modules/
+
+# Build outputs
+dist/
+target/
+build/
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment configs
+.env
+.env.local
+
+# Archives
+*.zip
+*.rar
+*.7z
