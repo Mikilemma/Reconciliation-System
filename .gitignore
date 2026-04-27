@@ -22,6 +22,10 @@ Thumbs.db
 .env
 .env.local
 
+echo target/ >> .gitignore
+echo *.jar >> .gitignore
+echo *.rar >> .gitignore
+
 # Archives
 *.zip
 *.rar
