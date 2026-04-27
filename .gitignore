@@ -44,3 +44,11 @@ target/
 
 # Backup folders
 Backup/
+
+# Maven weird embedded path
+backend/${project.basedir}/
+
+# General Maven
+.m2/
+**/.m2/
+**/resolver-status.properties
