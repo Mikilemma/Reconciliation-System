@@ -26,3 +26,21 @@ Thumbs.db
 *.zip
 *.rar
 *.7z
+
+# Maven local repository (CRITICAL)
+.m2/
+**/.m2/
+
+# Maven metadata noise
+**/resolver-status.properties
+
+# Java build
+target/
+*.class
+
+# Test / temp artifacts (your case)
+*.json
+*.txt
+
+# Backup folders
+Backup/
